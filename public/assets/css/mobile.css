@@ -1,0 +1,152 @@
+/* Mobile Device */
+@media (max-width: 767px) {
+    .banner .carousel-caption{
+        text-align: justify;
+        position: absolute;
+        right: 15%;
+        bottom: 0.25rem;
+        left: 15%;
+        padding-top: 1.25rem !important;
+        padding-bottom: 0.25rem !important;
+        color: #fff;
+    }
+
+    .banner .carousel-caption h3{
+        font-size: 13px;
+    }
+    .banner .carousel-caption p{
+        font-size: 8px;
+        width: 50%;
+    }
+
+    .banner{
+        width: 100%;
+        height: 200px;
+        background-color: red;
+    }
+
+    .carousel-control-next, .carousel-control-prev{
+        bottom: -51px !important;
+    }
+
+    .about_us .header{
+        font-size: 30px !important;
+    }
+    .about_us p{
+        font-size: 7px !important;
+        margin-top: 12px !important;
+    }
+
+    .external-link .circle{
+        width: 40px;
+        height: 40px;
+        border-radius: 160px;
+        background-color: white;
+        margin: 6px;
+        perspective: 1000px;
+        transition: transform 0.5s, background-color 0.3s;
+    }
+
+    .external-link .circle a{
+        font-size: 20px;
+        margin-left: 16px;
+        top: 5px;
+    }
+
+    .external-link .circle:hover a {
+        color: white; /* Change text color on hover */
+    }
+
+    .external-link .circle .xh{
+        margin-left: 5px !important;
+    }
+
+    .external-link .circle .s{
+        margin-left: 17px !important;
+    }
+
+    .external-link .circle .f{
+        margin-left: 17px !important;
+    }
+
+    .col-lg-3 img {
+        max-width: 92%;
+        height: auto;
+        display: block;
+        transition: transform 0.3s ease;
+        z-index: 0; /* Ensure the image is below the background color */
+        margin-left: 16px;
+      }
+
+      .col-lg-3:hover .background {
+        width: 90%; /* Match the width to the image width */
+        background-color: rgba(250, 4, 4, 0.774); /* Change the color as desired when flipping */
+        margin-left: 16px;
+      }
+
+      .internal{
+        margin-top: 30px !important;
+    }
+
+    .main_footer .content{
+        padding-top: 40px !important;
+      }
+      .main_footer .content p{
+        font-size: 13px !important;
+        margin-top: 10px !important;
+      }
+
+      .main_footer .content h3{
+        font-size: 25px !important;
+      }
+
+      .main_footer .content .socials{
+        display: flex;
+        margin: 10px;
+      }
+
+      .main_footer .content .socials img{
+        width: 50%;
+        margin: 8px;
+      }
+
+      .main_footer .next_footer{
+        width: 100%;
+        height: 70px;
+        background-color: black;
+        margin-top: 60px;
+        color: white;
+        text-align: center;
+      }
+
+      .main_footer .next_footer .copyright{
+        padding-top: 12px;
+      }
+
+      /* free videos */
+      .free_videos{
+        margin-top: 50px;
+    }
+    .free_videos video{
+        width: 100%;
+    }
+    .free_videos h3{
+        font-size: 8px;
+    }
+    .free_videos p{
+        color: white;
+        font-size: 5px;
+        font-family: serif !important;
+        margin-top: -29px;
+    }
+    .free_videos .btn-primary{
+        background-color: white;
+        color: black;
+        font-size: 3px;
+        margin-top: -29px;
+        padding: 5px 8px;
+    }
+    .free_videos .content{
+        margin-left: -18px !important;
+    }
+}
