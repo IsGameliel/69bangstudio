@@ -17,4 +17,12 @@ class PagesController extends Controller
     public function PaidVideos(){
         return view('paidVideos');
     }
+
+    public function meetMe(){
+        return view('meetme');
+    }
+
+    public function store(){
+        return  view('store');
+    }
 }

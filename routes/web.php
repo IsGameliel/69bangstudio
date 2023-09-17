@@ -17,7 +17,8 @@ use App\Http\Controllers\PagesController;
 Route::get('/', [PagesController::class, 'index']);
 Route::get('/free_videos', [PagesController::class, 'freeVideos'])->name('free_videos');
 Route::get('/premium_videos', [PagesController::class, 'paidVideos'])->name('premium_videos');
+Route::get('/meetme', [PagesController::class, 'meetMe']);
+Route::get('/store', [PagesController::class, 'store']);
 
 Auth::routes();
-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -32,4 +32,42 @@
     .carousel-control-next, .carousel-control-prev{
         bottom: -49px !important;
     }
+
+    .main_footer .content p {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+/* ==================================================
+                    meet me
+=====================================================*/
+.meetmeImg{
+    border-radius: 20px;
+}
+.meetme_content p{
+    text-align: center;
+    font-size: 15px;
+    margin: 0 auto;
+    margin-top: 12px;
+    color: white;
+}
+
+.meetme_content .meetContent .btn{
+    margin-left: 110px;
+    margin-top: 31px;
+    background: linear-gradient(45deg, red, transparent);
+    border-color: white;
+}
+.externals{
+    margin-top: 50px;
+}
+
+.ads{
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(47deg, red, orange);
+    margin-top: 80px;
+    border-radius: 20px;
+}
+
 }

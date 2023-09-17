@@ -67,12 +67,14 @@
     <!-- About Section -->
     <div class="about_us">
         <h2 class="header">ABOUT US</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quam rem? Accusantium iure <br>
-            sunt vitae et ipsum mollitia ducimus deleniti inventore nam? A mollitia iste corporis exercitationem <br>
-            commodi debitis sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum fugiat <br>
-            minus assumenda iste consectetur hic tempore nobis dolor! Natus, aspernatur? Quia omnis inventore totam <br>
-            eaque natus quaerat quidem modi dolorum!
-        </p>
+        <div class="aboutContent">
+            <p>We specialize in producing high-quality African adult content that showcases
+                the beauty and sensuality of African teens. Our team of experienced professionals
+                is dedicated to creating authentic, compelling and thought-provoking young adult
+                storylines, dynamic characters, and breathtaking visuals that transport viewers '
+                into a world of imagination and adventure.
+            </p>
+        </div>
     </div>
 
     <div class="external-link">
@@ -133,7 +135,7 @@
 
                 <div class="col-lg-3 col-md-3 col-6 col-sm-6 mt-4">
                     <div class="background"></div>
-                    <a href="#">
+                    <a href="{{ url('meetme') }}">
                         <img src="assets/images/extra/hookup.jpg" alt="hookup">
                         <div class="image-text">Hookup</div>
                     </a>
@@ -141,7 +143,7 @@
 
                 <div class="col-lg-3 col-md-3 col-6 col-sm-6 mt-4">
                     <div class="background"></div>
-                    <a href="#">
+                    <a href="{{ url('meetme') }}">
                         <img src="assets/images/extra/meetme.jpg" alt="meetme">
                         <div class="image-text">Meetme</div>
                     </a>
@@ -151,7 +153,7 @@
                     <div class="background"></div>
                     <a href="#">
                         <img src="assets/images/extra/free.jpg" alt="free videos">
-                        <div class="image-text">Text Comes in here</div>
+                        <div class="image-text">Shop</div>
                     </a>
                 </div>
 
@@ -159,7 +161,7 @@
                     <div class="background"></div>
                     <a href="#">
                         <img src="assets/images/extra/free.jpg" alt="free videos">
-                        <div class="image-text">Text Comes in here</div>
+                        <div class="image-text">Others</div>
                     </a>
                 </div>
             </div>
