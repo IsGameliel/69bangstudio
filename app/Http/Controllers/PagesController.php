@@ -25,4 +25,16 @@ class PagesController extends Controller
     public function store(){
         return  view('store');
     }
+
+    public function others(){
+        return view('others');
+    }
+
+    public function confessions(){
+        return view('confessions');
+    }
+
+    public function podcast(){
+        return view('podcast');
+    }
 }

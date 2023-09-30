@@ -119,7 +119,7 @@
 
                 <div class="col-lg-3 col-md-3 col-6 col-sm-6 mt-4">
                     <div class="background"></div>
-                    <a href="#">
+                    <a href="{{ url('podcast')}}">
                         <img src="assets/images/extra/podcast.jpg" alt="podcast">
                         <div class="image-text">18+ Podcast</div>
                     </a>
@@ -151,7 +151,7 @@
 
                 <div class="col-lg-3 col-md-3 col-6 col-sm-6 mt-4">
                     <div class="background"></div>
-                    <a href="#">
+                    <a href="{{ url('store') }}">
                         <img src="assets/images/extra/free.jpg" alt="free videos">
                         <div class="image-text">Shop</div>
                     </a>
@@ -159,7 +159,7 @@
 
                 <div class="col-lg-3 col-md-3 col-6 col-sm-6 mt-4">
                     <div class="background"></div>
-                    <a href="#">
+                    <a href="{{ url('others')}}">
                         <img src="assets/images/extra/free.jpg" alt="free videos">
                         <div class="image-text">Others</div>
                     </a>
