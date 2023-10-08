@@ -392,12 +392,7 @@ body {
     color: white;
     margin-top: 62px;
 }
-.confession .nav{
-    background-color: grey !important;
-}
-.confession {
-    background-color: grey !important;
-}
+
 /* coming soon */
 .coming_soon h1{
     text-align: center;
@@ -405,4 +400,100 @@ body {
     font-size: 60px;
     margin-top: 200px;
     margin-bottom: 200px;
+}
+
+/* ========================================
+               Confessions
+===========================================*/
+.confession .nav{
+    background-color: white !important;
+    padding: 16px;
+}
+.confession .nav .nav-item .nav-link{
+    color: black;
+}
+.confession .nav .nav-item .x{
+    color: black;
+    font-weight: bold;
+}
+.confession nav{
+    background-color: wheat !important;
+}
+.confession nav .nav-item .nav-link{
+    color: black !important;
+}
+
+.sec_nav .nav-item{
+    display: block;
+    margin: 12px;
+}
+
+.sec_nav .nav-item .nav-link{
+    color: black;
+}
+.sec_nav .nav-item .x{
+    font-weight: bold;
+}
+.confession .top_section{
+    margin-top: 30px;
+}
+.confession .top_section .confession_heading{
+    color: red;
+    text-align: center;
+    font-size: 45px;
+}
+.confession .top_section h3{
+    color: wheat;
+    text-align: center;
+    font-size: 35px;
+}
+.confession .top_section .para{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 75px;
+}
+.confession .top_section .para p{
+    text-align: center;
+    color: wheat;
+}
+.confession .top_section .carousel-inner{
+    width: 60% !important;
+    color: wheat;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.confession .top_section .carousel-inner p{
+    text-align: center;
+}
+.confession .top_section .iframe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.confession .navs{
+    background-color: #dc3545 !important;
+    margin-top: 40px;
+}
+
+.confession .navs .nav-item .nav-link{
+    color: white !important;
+}
+.confession .confession_bg{
+    background-color: wheat;
+    margin-top: 30px;
+    padding: 25px;
+}
+.confession .confession_bg .btn{
+    font-size: 11px;
+}
+.confession .confession_bg .d-flex p{
+    margin: 12px;
+}
+.confession .confession_bg .d-flex{
+    justify-content: end;
+}
+.confession  .confession_bg {
+    border-top: 5px solid green;
 }

@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> --}}
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald&display=swap">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/mobile.css">
     <link rel="stylesheet" href="assets/css/tablet.css">
+
 </head>
 <body>
     <div class="preloader-wrapper">
@@ -109,12 +112,13 @@
                 &copy; Copyright <strong><span>xxx69Bangstudis</span></strong>. All Rights Reserved
             </div>
               <div class="credits">
-                Designed by <a href="#">simvic</a>
+                Designed by <a href="#">xx69bang</a>
               </div>
         </div>
     </footer>
     {{-- <script src="assets/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> --}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/fontawesome/js/all.js"></script>
 </body>
 </html>
