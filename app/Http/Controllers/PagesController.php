@@ -34,7 +34,7 @@ class PagesController extends Controller
         return view('confessions');
     }
 
-    public function podcast(){
-        return view('podcast');
+    public function confess(){
+        return view('confess');
     }
 }

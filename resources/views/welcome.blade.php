@@ -127,7 +127,7 @@
 
                 <div class="col-lg-3 col-md-3 col-6 col-sm-6 mt-4">
                     <div class="background"></div>
-                    <a href="#">
+                    <a href="{{ url('confessions')}}">
                         <img src="assets/images/extra/conffessions.jpg" alt="conffessions">
                         <div class="image-text">18+ Conffessions</div>
                     </a>

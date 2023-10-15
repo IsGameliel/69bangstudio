@@ -497,3 +497,31 @@ body {
 .confession  .confession_bg {
     border-top: 5px solid green;
 }
+.confession .top_section .confess_form{
+    background-color: #fefefe;
+    color: grey;
+    font-family: roboto,sans-serif;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.confession .top_section .confess_form svg{
+    margin-left: 40rem;
+}
+.confession .top_section .confess_form h1{
+    text-align: center;
+    font-weight: bold;
+}
+.confession .top_section .confess_form .p{
+    font-size: 20px;
+    padding-bottom: 23px;
+    text-align: center;
+}
+
+.confession .top_section .confess_form form .container{
+    padding-left: 6.5rem;
+    padding-right: 6.5rem; 
+}
+.confession .top_section .confess_form form .container .note{
+    color: skyblue;
+}

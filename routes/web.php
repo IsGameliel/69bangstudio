@@ -22,6 +22,7 @@ Route::get('/meetme', [PagesController::class, 'meetMe']);
 Route::get('/store', [PagesController::class, 'store']);
 Route::get('/others', [PagesController::class, 'others']);
 Route::get('/confessions', [PagesController::class, 'confessions']);
+Route::get('/confess', [PagesController::class, 'confess']);
 Route::get('/podcast', [PagesController::class, 'podcast']);
 
 
