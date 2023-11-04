@@ -1,5 +1,28 @@
 @extends('layouts.main')
 
+<style>
+    .tag-input-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5px;
+    }
+
+    .tag-button {
+        display: inline-flex;
+        align-items: center;
+        background-color: red;
+        color: white;
+        padding: 5px 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    .tag-button .delete-icon {
+        margin-left: 5px;
+        cursor: pointer;
+    }
+</style>
 @section('content')
 
 <div class="container">
@@ -21,22 +44,22 @@
                 <h1>Do penance and confess your sins</h1>
                 <p class="p">all confessions will be posted anonymously</p>
 
-                <form action="" class="mb-5">
+                <form method="POST" action="{{ url('send-confession') }}" class="mb-5">
+                    @csrf
                     <div class="form-group">
                         <textarea name="body" id="" cols="30" rows="10" class="form-control"></textarea>
                     </div>
                     <div class="container mt-5">
                         <div class="form-group">
                             <label for="">Add tag</label>
-                            <input type="text" class="form-control" name="tag">
-                            <p class="note">Press Enter, Comma or Spacebar to create a new tag, Backspace or Delete to remove the last one.</p>
+                            <input type="text"  name="tags" class="form-control tag-input">
                         </div>
 
                         <div class="form-group">
                             <label for="">Choose category</label>
-                            <select name="category" id="" class="form-control">
+                            <select name="categories" id="" class="form-control">
                                 <option value="Abuse">Abuse</option>
-                                <option value="Adiction">Adiction</option>
+                                <option value="Addiction">Addiction</option>
                                 <option value="Adultery">Adultery</option>
                             </select>
                         </div>

@@ -54,6 +54,12 @@ body {
     background-color: rgb(3, 3, 3) !important;
     color: black;
 }
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: var(--bs-dropdown-link-hover-color);
+    background-color: red !important;
+}
+
 .DPI{
     color: black !important;
 }
@@ -238,12 +244,18 @@ body {
     color: white;
 }
 .main_footer .content p{
-    font-size: 21px;
+    font-size: 19px;
     margin-top: 15px;
 }
 
+.main_footer .content p a{
+    text-decoration: none;
+    color: white;
+}
+
+
 .main_footer .content h3{
-    font-size: 42px;
+    font-size: 30px;
     color: black;
 }
 
@@ -269,6 +281,8 @@ body {
 .main_footer .next_footer .copyright{
     padding-top: 12px;
 }
+
+
 
 /* free videos */
 .free_videos{
@@ -520,7 +534,7 @@ body {
 
 .confession .top_section .confess_form form .container{
     padding-left: 6.5rem;
-    padding-right: 6.5rem; 
+    padding-right: 6.5rem;
 }
 .confession .top_section .confess_form form .container .note{
     color: skyblue;

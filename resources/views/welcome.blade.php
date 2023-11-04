@@ -79,22 +79,22 @@
 
     <div class="external-link">
         <div class="circle">
-            <a href="#">X</a>
+            <a href="https://www.xvideos.com/channels/xxx69bang">X</a>
         </div>
         <div class="circle">
-            <a class="s" href="#">S</a>
+            <a class="s" href="https://www.sheer.com/xxx69bang">S</a>
         </div>
         <div class="circle">
-            <a class="f" href="#">F</a>
+            <a class="f" href="https://faphouse.com/models/xxx69bang">F</a>
         </div>
         <div class="circle">
-            <a class="xh" href="#">XH</a>
+            <a class="xh" href="https://xhamster.com/creators/xxx69bang">XH</a>
         </div>
         <div class="circle">
-            <a href="#">P</a>
+            <a href="https://www.pornhub.com/model/xxx69bang">P</a>
         </div>
         <div class="circle">
-            <a href="#">O</a>
+            <a href="https://onlyfans.com/xxx69bang">O</a>
         </div>
     </div>
 

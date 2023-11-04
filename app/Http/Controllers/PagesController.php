@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Confession;
+use Illuminate\Support\Facades\Validator;
+
 
 class PagesController extends Controller
 {
@@ -36,5 +39,25 @@ class PagesController extends Controller
 
     public function confess(){
         return view('confess');
+    }
+
+    public function sendConfession(Request $request)
+    {
+
+        $validator = Validator::make($request->all(), [
+            'body' => 'required|min:5|max:10000',
+            'tags' => 'required',
+            'categories' => 'required',
+        ]);
+
+
+        $confess = new Confession;
+
+        $confess->body = $request->input('body');
+        $confess->tags = $request->input('tags');
+        $confess->categories = $request->input('categories');
+
+        $confess->save();
+        return redirect('confession');
     }
 }
