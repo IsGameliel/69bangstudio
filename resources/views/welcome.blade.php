@@ -1,6 +1,8 @@
 @extends('layouts.main')
 
 @section('content')
+@include('includes/popup')
+<div class="main-content blur">
     <!-- Banner Section -->
     <div class="banner">
         <div class="container-fluid">
@@ -167,4 +169,6 @@
             </div>
         </div>
     </div>
+
+</div>
  @endsection
