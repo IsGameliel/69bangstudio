@@ -38,19 +38,18 @@
     }
 
     .external-link .circle{
-        width: 40px;
-        height: 40px;
+        width: 52%;
+        height: 12px;
         border-radius: 160px;
-        background-color: white;
-        margin: 6px;
+        background-color: transparent;
+        margin: 15px;
         perspective: 1000px;
         transition: transform 0.5s, background-color 0.3s;
     }
 
-    .external-link .circle a{
-        font-size: 20px;
-        margin-left: 16px;
-        top: 5px;
+    .external-link .next:nth-child(3)::after {
+        content: "\A"; /* Unicode character for a new line */
+        white-space: pre; /* Preserve white spaces */
     }
 
     .external-link .circle:hover a {
@@ -86,24 +85,34 @@
 
       .internal{
         margin-top: 30px !important;
+        margin-left: -15px;
+    }
+
+    .main_footer {
+        background-color: red;
+        width: 100%;
+        height: 271px;
+        margin-top: 128px;
     }
 
     .main_footer .content{
         padding-top: 40px !important;
       }
       .main_footer .content p{
-        font-size: 13px !important;
+        font-size: 6px !important;
         margin-top: 10px !important;
       }
 
       .main_footer .content h3{
-        font-size: 25px !important;
+        font-size: 17px !important;
       }
 
-      .main_footer .content .socials{
+      main_footer .content .socials {
         display: flex;
         margin: 10px;
-      }
+        margin-left: -9px;
+        margin-top: -15px;
+    }
 
       .main_footer .content .socials img{
         width: 50%;

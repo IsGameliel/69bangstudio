@@ -33,6 +33,10 @@ class PagesController extends Controller
         return view('others');
     }
 
+    public function commingSoon(){
+        return view('comming_soon');
+    }
+
     public function confessions(){
         return view('confessions');
     }
@@ -59,5 +63,9 @@ class PagesController extends Controller
 
         $confess->save();
         return redirect('confession');
+    }
+
+    public function policy(){
+        return view('policy');
     }
 }

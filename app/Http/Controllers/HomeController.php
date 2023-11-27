@@ -31,4 +31,9 @@ class HomeController extends Controller
     {
         return view('admin/index');
     }
+
+    public function SuperAdminHome(): View
+    {
+        return view('admin/index');
+    }
 }

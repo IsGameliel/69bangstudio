@@ -33,35 +33,24 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{{ url('/') }}">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Categories
                         </a>
-                        {{-- <ul class="dropdown-menu">
+                        <ul class="dropdown-menu">
                             <li><a class="dropdown-item DPI" href="#">Straight</a></li>
                             <li><a class="dropdown-item" href="#">Bisexual</a></li>
                             <li><a class="dropdown-item" href="#">Gay</a></li>
                             <li><a class="dropdown-item" href="#">Lesbian</a></li>
                             <li><a class="dropdown-item" href="#">Solo</a></li>
                             <li><a class="dropdown-item" href="#">Others</a></li>
-                        </ul> --}}
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item DPI" href="#">Check</a></li>
-                            <li><a class="dropdown-item" href="#">Store</a></li>
-                            <li><a class="dropdown-item" href="#">Hookshirt</a></li>
-                            <li><a class="dropdown-item" href="#">Free check</a></li>
-                            <li><a class="dropdown-item" href="#">Store three</a></li>
-                            <li><a class="dropdown-item" href="#">Free</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Affiliate</a>
+                        <a class="nav-link" href="{{ url('others') }}">Affiliate</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Vacancies</a>
+                        <a class="nav-link" href="{{ url('others') }}">Vacancies</a>
                     </li>
                     @guest
                         @if (Route::has('login'))
@@ -128,10 +117,10 @@
                 <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                     <div class="content">
                         <h3>Quick Links</h3>
-                        <p><a href="#">Legal</a></p>
-                        <p><a href="#">2257</a></p>
-                        <p><a href="#">Sponsorship</a></p>
-                        <p><a href="#">Promotions</a></p>
+                        <p><a href="{{ url('policy') }}">Legal</a></p>
+                        <p><a href="{{ url('comming_soon') }}">2257</a></p>
+                        <p><a href="{{ url('comming_soon') }}">Sponsorship</a></p>
+                        <p><a href="{{ url('others') }}">Promotions</a></p>
 
                     </div>
                 </div>

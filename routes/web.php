@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Admin\VideoController;
+use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +17,15 @@ use App\Http\Controllers\HomeController;
 |
 */
 
+Route::get('/clear-cache', function () {
+    Artisan::call('cache:clear');
+    Artisan::call('config:clear');
+    Artisan::call('optimize');
+
+    return 'Cache, config, and optimization cleared successfully.';
+});
+
+
 
 Route::get('/', [PagesController::class, 'index'])->name('welcome');
 Route::get('/free_videos', [PagesController::class, 'freeVideos'])->name('free_videos');
@@ -22,6 +33,8 @@ Route::get('/premium_videos', [PagesController::class, 'paidVideos'])->name('pre
 Route::get('/meetme', [PagesController::class, 'meetMe']);
 Route::get('/store', [PagesController::class, 'store']);
 Route::get('/others', [PagesController::class, 'others']);
+Route::get('/comming_soon', [PagesController::class, 'commingSoon']);
+Route::get('/policy', [PagesController::class, 'policy']);
 // Confession route
 Route::get('/confessions', [PagesController::class, 'confessions'])->name('confessions');
 Route::get('/confess', [PagesController::class, 'confess']);
@@ -52,6 +65,8 @@ All Admin Routes List
 Route::middleware(['auth', 'user-access:admin'])->group(function () {
 
     Route::get('/admin/home', [HomeController::class, 'adminHome'])->name('admin.home');
+    Route::get('admin/video', [VideoController::class, 'index']);
+    Route::get('admin/video/upload', [VideoController::class, 'create']);
 });
 
 Route::middleware(['auth', 'user-access:user'])->group(function () {

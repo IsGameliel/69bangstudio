@@ -80,24 +80,12 @@
     </div>
 
     <div class="external-link">
-        <div class="circle">
-            <a href="https://www.xvideos.com/channels/xxx69bang">X</a>
-        </div>
-        <div class="circle">
-            <a class="s" href="https://www.sheer.com/xxx69bang">S</a>
-        </div>
-        <div class="circle">
-            <a class="f" href="https://faphouse.com/models/xxx69bang">F</a>
-        </div>
-        <div class="circle">
-            <a class="xh" href="https://xhamster.com/creators/xxx69bang">XH</a>
-        </div>
-        <div class="circle">
-            <a href="https://www.pornhub.com/model/xxx69bang">P</a>
-        </div>
-        <div class="circle">
-            <a href="https://onlyfans.com/xxx69bang">O</a>
-        </div>
+            <a href="https://www.xvideos.com/channels/xxx69bang"><img class="circle" src="{{ asset('assets/images/logos/xvideos.white.svg') }}" alt=""></a>
+            <a href="https://www.sheer.com/xxx69bang"><img class="circle" src="{{ asset('assets/images/logos/logo.svg') }}" alt=""></a>
+            <a href="https://faphouse.com/models/xxx69bang"><img class="circle" src="{{ asset('assets/images/logos/xlogo-normal.svg') }}" alt=""></a>
+            <a href="https://xhamster.com/creators/xxx69bang"><img class="circle next" src="{{ asset('assets/images/logos/logo (1).svg') }}" alt=""></a>
+            <a href="https://www.pornhub.com/model/xxx69bang"><img class="circle" src="{{ asset('assets/images/logos/pornhub_logo_straight.svg') }}" alt=""></a>
+            <a href="https://onlyfans.com/xxx69bang"><img class="circle" src="{{ asset('assets/images/logos/61ef2bf88d82be0004c29f9b.png') }}" alt=""></a>
     </div>
 
     <div class="container">

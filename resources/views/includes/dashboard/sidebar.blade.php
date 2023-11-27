@@ -19,8 +19,8 @@
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-video me-2"></i>Videos</a>
                 <div class="dropdown-menu bg-transparent border-0">
-                    <a href="#" class="dropdown-item">All videos</a>
-                    <a href="#" class="dropdown-item">Upload Video</a>
+                    <a href="{{ url('admin/video')}}" class="dropdown-item">All videos</a>
+                    <a href="{{ url('admin/video/upload')}}" class="dropdown-item">Upload Video</a>
                 </div>
             </div>
             <div class="nav-item dropdown">
