@@ -19,28 +19,18 @@
                                     <th scope="col">#</th>
                                     <th scope="col">Title</th>
                                     <th scope="col">Description</th>
-                                    <th scope="col">Models Present</th>
-                                    <th scope="col">New Models</th>
-                                    <th scope="col">Block Countries</th>
-                                    <th scope="col">agree</th>
-                                    <th scope="col">File</th>
-                                    <th scope="col">Status</th>
+                                    <th scope="col">Image</th>
                                     <th scope="col">Date Uploaded</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($video as $item)
+                                @foreach ($store as $item)
                                 <tr>
                                     <th scope="row">{{$item->id}}</th>
                                     <td>{{$item->title}}</td>
                                     <td>{{$item->description}}</td>
-                                    <td>{{$item->models_present}}</td>
-                                    <td>{{$item->new_models}}</td>
-                                    <td>{{$item->block_countries}}</td>
-                                    <td>{{$item->agree}}</td>
-                                    <td>{{$item->file}}</td>
-                                    <td>{{$item->status}}</td>
-                                    <td>{{$item->timestamp}}</td>
+                                    <td><image src="{{ asset('store/'. $item->image)}}" style="width: 20%;" alt="store image"></td>
+                                    <td>{{$item->timestamps}}</td>
                                 </tr>
                                 @endforeach
                             </tbody>

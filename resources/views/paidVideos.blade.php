@@ -75,102 +75,19 @@
         <div class="col-md-6 col-lg-6 col-6 col-sm-6">
             <div class="free_videos">
                 <div class="row">
+                    @foreach ($video as $item)
                     <div class="col">
-                        <video controls src="assets/video/1.mp4">
+                        <video controls src="{{ ('upload/' . $item->file) }}">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <div class="col content">
-                        <h3>Catch them young</h3><br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3>{{$item->title}}</h3><br>
+                        <p>{{$item->description}}</p>
                         <a href="#" class="btn btn-primary">Tip me</a>
-                        <a href="#" class="btn btn-primary">Get full video</a>
+                        <a href="{{ url('premium_videos') }}" class="btn btn-primary">Get full video</a>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-6 col-6 col-sm-6">
-            <div class="free_videos">
-                <div class="row">
-                    <div class="col">
-                        <video controls src="assets/video/1.mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div class="col content">
-                        <h3>Catch them young</h3><br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">Tip me</a>
-                        <a href="#" class="btn btn-primary">Get full video</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-6 col-6 col-sm-6">
-            <div class="free_videos">
-                <div class="row">
-                    <div class="col">
-                        <video controls src="assets/video/1.mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div class="col content">
-                        <h3>Catch them young</h3><br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">Tip me</a>
-                        <a href="#" class="btn btn-primary">Get full video</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-6 col-6 col-sm-6">
-            <div class="free_videos">
-                <div class="row">
-                    <div class="col">
-                        <video controls src="assets/video/1.mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div class="col content">
-                        <h3>Catch them young</h3><br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">Tip me</a>
-                        <a href="#" class="btn btn-primary">Get full video</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-6 col-6 col-sm-6">
-            <div class="free_videos">
-                <div class="row">
-                    <div class="col">
-                        <video controls src="assets/video/1.mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div class="col content">
-                        <h3>Catch them young</h3><br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">Tip me</a>
-                        <a href="#" class="btn btn-primary">Get full video</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-6 col-6 col-sm-6">
-            <div class="free_videos">
-                <div class="row">
-                    <div class="col">
-                        <video autoplay controls src="assets/video/1.mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div class="col content">
-                        <h3>Catch them young</h3><br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">Tip me</a>
-                        <a href="#" class="btn btn-primary">Get full video</a>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>

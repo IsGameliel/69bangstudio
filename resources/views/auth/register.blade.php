@@ -52,7 +52,7 @@
                         <label for="floatingPassword">Password</label>
                     </div>
                     <div class="form-floating mb-4">
-                        <input type="password" class="form-control" name="password-confirm" name="password_confirmation" required autocomplete="new-password">
+                        <input type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                         <label for="floatingPassword">Confirm Password</label>
                     </div>
                     <div class="d-flex align-items-center justify-content-between mb-4">
@@ -62,7 +62,7 @@
                         </div>
                         <a href="{{ route('password.request') }}">Forgot Password</a>
                     </div>
-                    <button type="submit" class="btn btn-primary py-3 w-100 mb-4">Sign In</button>
+                    <button type="submit" class="btn btn-primary py-3 w-100 mb-4">Sign Up</button>
                     <p class="text-center mb-0">Already have an Account? <a href="{{ url('login') }}">Sign In</a></p>
                     </form>
                 </div>

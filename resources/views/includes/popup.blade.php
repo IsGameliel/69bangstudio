@@ -12,6 +12,6 @@
             By clicking on the "Enter" button, and by entering this website you agree
             with all the above and certify under penalty of perjury that you are an adult.</p>
         <button class="popup-button btn btn-danger" id="button1">Enter</button>
-        <a class="btn btn-danger" href="{{ url('store') }}" id="button2">Got to store</a>
+        <a class="btn btn-danger" href="{{ url('xstore') }}" id="button2">Got to store</a>
     </div>
 </div>

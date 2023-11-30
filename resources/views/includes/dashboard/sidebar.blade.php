@@ -26,8 +26,8 @@
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-shopping-cart me-2"></i>Store</a>
                 <div class="dropdown-menu bg-transparent border-0">
-                    <a href="#" class="dropdown-item">All Products</a>
-                    <a href="#" class="dropdown-item">Upload product</a>
+                    <a href="{{ url('admin/store')}}" class="dropdown-item">All Products</a>
+                    <a href="{{ url('admin/store/add')}}" class="dropdown-item">Upload product</a>
                 </div>
             </div>
         </div>

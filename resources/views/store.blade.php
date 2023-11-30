@@ -46,54 +46,20 @@
             </div>
         </div>
         <div class="row">
+            @foreach ($store as $item)
             <div class="col-md-3 col-lg-3 col-sm-3 col-5 ">
                 <div class="product-img">
-                    <img src="{{ asset('assets/images/store/2.jpg')}}" alt="">
+                    <img src="{{ asset('store/' . $item->image)}}" alt="">
                 </div>
             </div>
             <div class="col-md-9 col-lg-9 col-sm-9 col-7">
                 <div class="product-description">
-                    <h3>Product title</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam at, eveniet aut, similique quibusdam consequuntur earum necessitatibus hic minus nostrum, ab adipisci eos explicabo error facilis officiis optio nisi in?</p>
+                    <h3>{{$item->title}}</h3>
+                    <p>{{$item->description}}</p>
                     <a href="#whatsapp" class="btn btn-secondary">Place Order</a>
                 </div>
             </div>
-            <div class="col-md-3 col-lg-3 col-sm-3 col-5">
-                <div class="product-img">
-                    <img src="{{ asset('assets/images/store/2.jpg')}}" alt="">
-                </div>
-            </div>
-            <div class="col-md-9 col-lg-9 col-sm-9 col-7">
-                <div class="product-description">
-                    <h3>Product title</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam at, eveniet aut, similique quibusdam consequuntur earum necessitatibus hic minus nostrum, ab adipisci eos explicabo error facilis officiis optio nisi in?</p>
-                    <a href="#whatsapp" class="btn btn-secondary">Place Order</a>
-                </div>
-            </div>
-            <div class="col-md-3 col-lg-3 col-sm-3 col-5">
-                <div class="product-img">
-                    <img src="{{ asset('assets/images/store/2.jpg')}}" alt="">
-                </div>
-            </div>
-            <div class="col-md-9 col-lg-9 col-sm-9 col-7">
-                <div class="product-description">
-                    <h3>Product title</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam at, eveniet aut, similique quibusdam consequuntur earum necessitatibus hic minus nostrum, ab adipisci eos explicabo error facilis officiis optio nisi in?</p>
-                    <a href="#whatsapp" class="btn btn-secondary">Place Order</a>
-                </div>
-            </div>
-            <div class="col-md-3 col-lg-3 col-sm-3 col-5">
-                <div class="product-img">
-                    <img src="{{ asset('assets/images/store/2.jpg')}}" alt="">
-                </div>
-            </div>
-            <div class="col-md-9 col-lg-9 col-sm-9 col-7">
-                <div class="product-description">
-                    <h3>Product title</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam at, eveniet aut, similique quibusdam consequuntur earum necessitatibus hic minus nostrum, ab adipisci eos explicabo error facilis officiis optio nisi in?</p>
-                    <a href="#whatsapp" class="btn btn-secondary">Place Order</a>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </div>

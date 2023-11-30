@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Confession;
+use App\Models\Store;
+use App\Models\Video;
 use Illuminate\Support\Facades\Validator;
 
 
@@ -14,11 +16,13 @@ class PagesController extends Controller
     }
 
     public function freeVideos(){
-        return view('freeVideos');
+        $video = Video::where('type', 'free')->get();
+        return view('freeVideos', compact('video'));
     }
 
     public function PaidVideos(){
-        return view('paidVideos');
+        $video = Video::where('type', 'paid')->get();
+        return view('paidVideos', compact('video'));
     }
 
     public function meetMe(){
@@ -26,7 +30,8 @@ class PagesController extends Controller
     }
 
     public function store(){
-        return  view('store');
+        $store = Store::all();
+        return  view('store', compact('store'));
     }
 
     public function others(){
